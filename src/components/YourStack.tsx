@@ -2,9 +2,11 @@ import type { ITechnology } from "../types/technology";
 
 interface YourStackProps {
   stack: ITechnology[];
+  removeFromStack: (id: string) => void;
+  removeAll: () => void;
 }
 
-const YourStack = ({ stack }: YourStackProps) => {
+const YourStack = ({ stack, removeFromStack, removeAll }: YourStackProps) => {
   return (
     <div className="card bg-base-100 shadow-sm border">
       <div className="card-body">
@@ -39,14 +41,22 @@ const YourStack = ({ stack }: YourStackProps) => {
                   <p className="text-xs text-gray-500">{technology.category}</p>
                 </div>
 
-                <button className="btn btn-sm btn-error">Delete</button>
+                <button
+                  onClick={() => removeFromStack(technology.id)}
+                  className="btn btn-sm btn-error"
+                >
+                  Delete
+                </button>
               </div>
             ))}
           </div>
         )}
 
         {stack.length > 0 && (
-          <button className="btn btn-outline btn-error w-full mt-4">
+          <button
+            onClick={removeAll}
+            className="btn btn-outline btn-error w-full mt-4"
+          >
             Remove All
           </button>
         )}

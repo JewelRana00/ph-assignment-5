@@ -1,6 +1,11 @@
 import type { ITechnology } from "../types/technology";
 
-const TechnologyCard = ({ technology }: { technology: ITechnology }) => {
+interface TechnologyCardProps {
+  technology: ITechnology;
+  addToStack: (technology: ITechnology) => void;
+}
+
+const TechnologyCard = ({ technology, addToStack }: TechnologyCardProps) => {
   return (
     <div
       className="card bg-base-100 shadow-sm
@@ -37,7 +42,10 @@ const TechnologyCard = ({ technology }: { technology: ITechnology }) => {
         </div>
 
         {/* Add Button */}
-        <button className="btn bg-black w-full rounded-[10px] text-white">
+        <button
+          onClick={() => addToStack(technology)}
+          className="btn btn-primary"
+        >
           Add to Stack
         </button>
       </div>
