@@ -5,11 +5,13 @@ import TechnologyCard from "./TechnologyCard";
 interface TechnologiesProps {
   technologiesPromise: Promise<ITechnology[]>;
   addToStack: (technology: ITechnology) => void;
+  stack: ITechnology[];
 }
 
 const Technologies = ({
   technologiesPromise,
   addToStack,
+  stack,
 }: TechnologiesProps) => {
   const technologies = use(technologiesPromise);
 
@@ -20,6 +22,7 @@ const Technologies = ({
           key={technology.id}
           technology={technology}
           addToStack={addToStack}
+          stack={stack}
         />
       ))}
     </div>

@@ -62,6 +62,7 @@ function App() {
           <div className="col-span-3">
             <Suspense fallback={<p>Loading...</p>}>
               <Technologies
+                stack={stack}
                 technologiesPromise={technologiesPromise}
                 addToStack={addToStack}
               />
