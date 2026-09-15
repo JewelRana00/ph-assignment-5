@@ -17,7 +17,7 @@ const TechnologyCard = ({
     <div
       className="card bg-base-100 shadow-sm
              transition-all duration-300
-             hover:-translate-y-1 hover:shadow-xl hover:bg-blue-50"
+             hover:-translate-y-1 hover:shadow-xl hover:bg-green-50"
     >
       <div className="card-body pt-20 relative space-y-5">
         <img
@@ -34,7 +34,7 @@ const TechnologyCard = ({
 
         <p>{technology.description}</p>
 
-        <div className="flex justify-between items-center pt-2">
+        <div className="flex flex-wrap justify-between items-center gap-3 pt-2">
           <button className="py-1.5 px-4 bg-base-300 rounded-xl">
             {technology.category}
           </button>
@@ -47,7 +47,7 @@ const TechnologyCard = ({
         <button
           onClick={() => addToStack(technology)}
           disabled={isAdded}
-          className="btn bg-black text-white hover:bg-gray-800 disabled:bg-gray-300"
+          className="btn w-full bg-black text-white hover:bg-gray-800 disabled:bg-gray-300"
         >
           {isAdded ? "Added" : "Add to Stack"}
         </button>

@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer className="bg-base-150 mt-16">
       <div className="container mx-auto px-4 py-12">
-        <div className="flex justify-between gap-10">
-          <div className="max-w-sm">
+        <div className="flex flex-col md:flex-row justify-between gap-10">
+          <div className="max-w-sm  w-full">
             <img src={Footerloogo} alt="DevStack" className="w-36 mb-4" />
 
             <p className="text-sm text-gray-400">
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t mt-10 pt-5 text-sm text-gray-300">
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row justify-between gap-3">
             <p>© 2026 DevStack. All rights reserved.</p>
             <div className="flex gap-4">
               <a href="#" className="text-sm text-gray-400 hover:text-gray-600">

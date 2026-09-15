@@ -58,8 +58,8 @@ function App() {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-6">
-          <div className="col-span-3">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 px-4 lg:px-0">
+          <div className="col-span-1 lg:col-span-3">
             <Suspense fallback={<p>Loading...</p>}>
               <Technologies
                 stack={stack}
@@ -69,7 +69,7 @@ function App() {
             </Suspense>
           </div>
 
-          <div className="col-span-1">
+          <div className="col-span-1 px-4 lg:px-0">
             <YourStack
               stack={stack}
               removeFromStack={removeFromStack}
