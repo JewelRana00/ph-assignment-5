@@ -1,3 +1,4 @@
+import { FiX } from "react-icons/fi";
 import type { ITechnology } from "../types/technology";
 
 interface YourStackProps {
@@ -43,9 +44,9 @@ const YourStack = ({ stack, removeFromStack, removeAll }: YourStackProps) => {
 
                 <button
                   onClick={() => removeFromStack(technology.id)}
-                  className="btn btn-sm btn-error"
+                  className="btn btn-sm btn-circle btn-ghost text-gray-500 hover:text-red-500"
                 >
-                  Delete
+                  <FiX size={18} />
                 </button>
               </div>
             ))}

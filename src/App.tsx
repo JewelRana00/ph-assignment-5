@@ -44,14 +44,14 @@ function App() {
 
       <div className="container mx-auto px-4 lg:px-0">
         <div className="mb-6">
-          <h2 className="font-bold text-xl md:text-2xl">
+          <h2 className="font-bold text-xl md:text-3xl">
             Explore the
             <span className="bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
               Technologies
             </span>
           </h2>
 
-          <p className="my-3 text-sm">
+          <p className="my-3">
             Explore modern technologies and tools for web development.
             <br className="hidden md:block" />
             Choose the right tools to build your ideal development stack.

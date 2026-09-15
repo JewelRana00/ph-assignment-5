@@ -1,4 +1,6 @@
+import { FiCheck } from "react-icons/fi";
 import type { ITechnology } from "../types/technology";
+import { toast } from "react-toastify";
 
 interface TechnologyCardProps {
   technology: ITechnology;
@@ -15,9 +17,10 @@ const TechnologyCard = ({
 
   return (
     <div
-      className="card bg-base-100 shadow-sm
-             transition-all duration-300
-             hover:-translate-y-1 hover:shadow-xl hover:bg-green-50"
+      className={`card bg-base-100 shadow-sm border
+    transition-all duration-300
+    hover:-translate-y-1 hover:shadow-xl
+    ${isAdded ? "border-pink-400 bg-pink-50" : "border-transparent"}`}
     >
       <div className="card-body pt-20 relative space-y-5">
         <img
@@ -45,11 +48,21 @@ const TechnologyCard = ({
         </div>
 
         <button
-          onClick={() => addToStack(technology)}
+          onClick={() => {
+            addToStack(technology);
+            toast.success(`${technology.name} added to your stack!`);
+          }}
           disabled={isAdded}
           className="btn w-full bg-black text-white hover:bg-gray-800 disabled:bg-gray-300"
         >
-          {isAdded ? "Added" : "Add to Stack"}
+          {isAdded ? (
+            <>
+              <FiCheck size={14} className="text-pink-600" />
+              <span className="text-pink-600">Added to Stack</span>
+            </>
+          ) : (
+            "Add to Stack"
+          )}
         </button>
       </div>
     </div>
