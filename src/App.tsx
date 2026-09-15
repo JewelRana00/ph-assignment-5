@@ -51,7 +51,7 @@ function App() {
             </span>
           </h2>
 
-          <p className="my-3">
+          <p className="my-3 text-sm">
             Explore modern technologies and tools for web development.
             <br className="hidden md:block" />
             Choose the right tools to build your ideal development stack.

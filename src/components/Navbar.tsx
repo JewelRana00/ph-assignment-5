@@ -18,7 +18,7 @@ const Navbar = () => {
         <img
           src={Logo}
           alt="Logo"
-          className="w-24 h-auto lg:w-auto lg:h-auto lg:static absolute left-1/2 -translate-x-1/2 lg:translate-x-0"
+          className="w-2 h-auto lg:w-auto lg:h-auto lg:static absolute left-1/2 -translate-x-1/2 lg:translate-x-0"
         />
 
         <ul className="hidden lg:flex justify-between items-center gap-5">
