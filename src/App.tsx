@@ -46,7 +46,7 @@ function App() {
         <div className="mb-6">
           <h2 className="font-bold text-xl md:text-2xl">
             Explore the
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
               Technologies
             </span>
           </h2>
