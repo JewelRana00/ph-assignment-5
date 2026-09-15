@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-base-100 sticky top-0 z-50">
-      <div className="container mx-auto relative flex items-center justify-between py-3">
+      <div className="container mx-auto relative flex items-center justify-between px-4 lg:px-0  py-3">
         <button
           className="text-2xl lg:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -18,7 +18,7 @@ const Navbar = () => {
         <img
           src={Logo}
           alt="Logo"
-          className="h-8 lg:h-auto lg:static absolute left-1/2 -translate-x-1/2 lg:translate-x-0"
+          className="w-24 h-auto lg:w-auto lg:h-auto lg:static absolute left-1/2 -translate-x-1/2 lg:translate-x-0"
         />
 
         <ul className="hidden lg:flex justify-between items-center gap-5">

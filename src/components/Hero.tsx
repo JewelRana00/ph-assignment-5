@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Build Your Ideal
+              Build Your Ideal{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Development Stack
               </span>

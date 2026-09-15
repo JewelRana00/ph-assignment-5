@@ -42,9 +42,9 @@ function App() {
       <Navbar />
       <Hero />
 
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 lg:px-0">
         <div className="mb-6">
-          <h2 className="font-bold text-2xl">
+          <h2 className="font-bold text-xl md:text-2xl">
             Explore the
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Technologies
@@ -53,7 +53,7 @@ function App() {
 
           <p className="my-3">
             Explore modern technologies and tools for web development.
-            <br />
+            <br className="hidden md:block" />
             Choose the right tools to build your ideal development stack.
           </p>
         </div>

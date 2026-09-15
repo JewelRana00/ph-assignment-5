@@ -2,7 +2,7 @@ import Footerloogo from "../assets/logo-text.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-base-150 mt-16">
+    <footer className="bg-base-200 mt-16">
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row justify-between gap-10">
           <div className="max-w-sm  w-full">
