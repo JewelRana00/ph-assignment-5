@@ -9,7 +9,7 @@ interface YourStackProps {
 
 const YourStack = ({ stack, removeFromStack, removeAll }: YourStackProps) => {
   return (
-    <div className="card bg-base-100 shadow-sm border">
+    <div className="card bg-base-100 shadow-sm border  sticky top-18 z-50">
       <div className="card-body">
         <h2 className="card-title">Your Stack</h2>
 
